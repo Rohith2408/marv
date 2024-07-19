@@ -96,13 +96,20 @@
 .bgwrapper{
   display:flex;
   flex-direction:column;
-  justify-content:end
+  justify-content:end;
+  position: relative;
 }
 
 .bg{
   width: 100%;
   height:auto;
+}
 
+.bgalternative{
+  width: 100%;
+  height:auto;
+  position: absolute;
+  bottom: 0;
 }
 
 .hoverimg{

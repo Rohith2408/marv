@@ -15,6 +15,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
   const [layout, setLayout] = useState<"web"|"mobile"|"tab"|"pc"|"laptop">(getLayout());
   const [navbarHeight, setNavbarHeight] = useState("0%");
   const [navbarScale, setNavbarScale] = useState(0);
+  const [gifLoaded,setGifLoaded]=useState(false)
   const navOptions = useRef([
     {name: "Home", id: "header"},
     {name: "About", id: "about-us"},
@@ -169,6 +170,14 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
         </div>
         <div className={[styles.bgwrapper, className].join(" ")}>
           <img
+            className={styles.bgalternative}
+            style={{display:gifLoaded?"none":"flex"}}
+            loading="lazy"
+            alt=""
+            src={layout === "mobile" ? "/HomeBgMobile.png" : (layout === "tab" ? "/HomeBgIpad.png" : "/HomeBgLaptop.png")}
+          />
+          <img
+            onLoad={()=>setGifLoaded(true)}
             className={styles.bg}
             loading="lazy"
             alt=""
