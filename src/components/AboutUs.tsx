@@ -33,12 +33,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
           alt=""
           src={"/cloud.png"}
         />
-        <img
-          className={[styles.marv1, className].join(" ")}
-          loading="lazy"
-          alt=""
-          src={"/marv-king.png"}
-        />
+        
         <div className={[styles.title, className].join(" ")}>
           KING
           {/* <img
@@ -52,7 +47,7 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
           <div>N</div>
           <div>G</div>*/}
         </div> 
-        <div className={[styles.subtitle, className].join(" ")}><p style={{margin:"10px"}}>A new king has risen!</p></div>
+        <div className={[styles.subtitle, className].join(" ")}><p style={{margin:"10px"}}>A new frog has risen!</p></div>
         <div className={[styles.description, className].join(" ")}>
           <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
             {/* <p style={{fontFamily:"var(--font-bangers)"}}>Origin Story</p> */}
