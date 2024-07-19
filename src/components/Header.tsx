@@ -158,7 +158,8 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
             </div>
           </div>
           <p className={styles.subtitle}>
-            Your favorite little racist frog(slightly). Here on his lambo to teach you the degen way
+            Pepe's poorly behaved slightly racist cousin Marv
+            {/* Your favorite little racist frog(slightly). Here on his lambo to teach you the degen way */}
           </p>
           <div className={[styles.buynowwrapper, className].join(" ")}>
             <button className={styles.buynowbutton}>
