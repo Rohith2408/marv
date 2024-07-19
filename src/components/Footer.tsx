@@ -56,7 +56,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
             <div className={[styles.contractaddwrapper, className].join(" ")}>
               <p className={[styles.contractadd, className].join(" ")}>Contract address {contractAddress}</p>
               {/* <input className={styles.contractadd} placeholder="Contract address... " type="text"/> */}
-              <button onClick={()=>{alert("copied");navigator.clipboard.writeText(contractAddress)}} className={[styles.copyiconwrapper, className].join(" ")}>
+              <button onClick={()=>{alert("Contract Address Copied");navigator.clipboard.writeText(contractAddress)}} className={[styles.copyiconwrapper, className].join(" ")}>
                 <img style={{height:"auto",width:"100%"}} src="/icon-2.svg"></img>
               </button>
             </div>
