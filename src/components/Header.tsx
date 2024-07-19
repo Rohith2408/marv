@@ -28,7 +28,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
   const socialIcons = useRef([
     { src: "/telegram.png", link: "https://t.me/realmarv_sol" },
     { src: "/twitter.png", link: "https://x.com/Realmarv_Sol" },
-    { src: "/dex.png", link: "#" }
+    { src: "/dex.png", link: "https://dexscreener.com/solana/AxrSAP7p2tP8gHTYUUzHncN2vBFuFGSPJjvvzB7919F2" }
   ]).current;
 
   useEffect(() => {
@@ -112,7 +112,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
                 </div>
                 <div className={[styles.buynowwrapper, className].join(" ")}>
                   <button className={styles.buynowbutton} style={{ padding: "5px 15px" }}>
-                    <div className={styles.navbarbuynow}>Buy Now</div>
+                    <div className={styles.navbarbuynow}><a onClick={()=>window.open("https://jupiter-terminal.dexscreener.com/?inputMint=MarvU2WKRKnr1QiRD9pVNhkp8G4paDxDjBqdgaV3hNM&outputMint=So11111111111111111111111111111111111111112")}>Buy Now</a></div>
                   </button>
                 </div>
               </div>
@@ -164,7 +164,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
           </p>
           <div className={[styles.buynowwrapper, className].join(" ")}>
             <button className={styles.buynowbutton}>
-              <div className={styles.buynowtext}>Buy Now</div>
+              <div className={styles.buynowtext}><a onClick={()=>window.open("https://jupiter-terminal.dexscreener.com/?inputMint=MarvU2WKRKnr1QiRD9pVNhkp8G4paDxDjBqdgaV3hNM&outputMint=So11111111111111111111111111111111111111112")}>Buy Now</a></div>
             </button>
           </div>
         </div>

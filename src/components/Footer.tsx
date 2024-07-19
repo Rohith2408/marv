@@ -80,7 +80,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
                   src="/telegram.png"
                 />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://dexscreener.com/solana/AxrSAP7p2tP8gHTYUUzHncN2vBFuFGSPJjvvzB7919F2" target="_blank" rel="noopener noreferrer">
                 <img
                   className={[styles.socialicons, className].join(" ")}
                   loading="lazy"
