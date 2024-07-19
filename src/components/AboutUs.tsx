@@ -22,6 +22,12 @@ const AboutUs: FunctionComponent<AboutUsType> = ({ className = "" }) => {
           src={"/cloud.png"}
         />
         <img
+          className={[styles.marv1, className].join(" ")}
+          loading="lazy"
+          alt=""
+          src={"/marv-king.png"}
+        />
+        <img
           className={[styles.marv2, className].join(" ")}
           loading="lazy"
           alt=""
