@@ -14,6 +14,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
     {title:"Telegram",url:"https://t.me/realmarv_sol"},
     {title:"Instagram",url:""}
   ]).current
+  const contractAddress=useRef("MarvU2WKRKnr1QiRD9pVNhkp8G4paDxDjBqdgaV3hNM").current
 
   const onLinkContainerClick = useCallback(() => {
     window.open("https://twitter.com/");
@@ -53,10 +54,11 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
           <div className={[styles.description2wrapper, className].join(" ")}>
             <div className={[styles.buymarv, className].join(" ")}>Buy Marv</div>
             <div className={[styles.contractaddwrapper, className].join(" ")}>
-              <input className={styles.contractadd} placeholder="Contract address... " type="text"/>
-              <div className={[styles.copyiconwrapper, className].join(" ")}>
-                <img style={{height:"100%",width:"auto"}} src="/icon-2.svg"></img>
-              </div>
+              <p className={[styles.contractadd, className].join(" ")}>Contract address {contractAddress}</p>
+              {/* <input className={styles.contractadd} placeholder="Contract address... " type="text"/> */}
+              <button onClick={()=>{alert("copied");navigator.clipboard.writeText(contractAddress)}} className={[styles.copyiconwrapper, className].join(" ")}>
+                <img style={{height:"auto",width:"100%"}} src="/icon-2.svg"></img>
+              </button>
             </div>
           </div>
           <div className={[styles.description3wrapper, className].join(" ")}>
