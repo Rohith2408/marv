@@ -90,6 +90,14 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
                   src="/dex.png"
                 />
               </a>
+              <a href="https://www.dextools.io/app/en/solana/pair-explorer/AxrSAP7p2tP8gHTYUUzHncN2vBFuFGSPJjvvzB7919F2?t=1721480118895" target="_blank" rel="noopener noreferrer">
+                <img
+                  className={[styles.socialicons, className].join(" ")}
+                  loading="lazy"
+                  alt="Dex"
+                  src="/dextools.png"
+                />
+              </a>
             </div>
 
             </div>

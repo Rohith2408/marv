@@ -7,7 +7,6 @@ export type MarvmemesType = {
 
 const Marvmemes: FunctionComponent<MarvmemesType> = ({ className = "" }) => {
 
-
   return (
     <section className={[styles.mainwrapper, className].join(" ")} id="marv-memes"  data-scroll-to="marv-memes">
       <div className={[styles.subwrapper, className].join(" ")}>
