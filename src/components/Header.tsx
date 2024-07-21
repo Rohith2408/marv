@@ -99,7 +99,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
                 ))}
               </div>
               <div className={[styles.socialwrapper, className].join(" ")}>
-                <div style={{ display: "flex", flexDirection: "row", gap: "10px" }}>
+                <div style={{ display: "flex", flexDirection: "row",alignItems:"center", gap: "10px" }}>
                   {socialIcons.map((icon) => (
                     <a key={icon.src} href={icon.link} target="_blank" rel="noopener noreferrer">
                       <img
