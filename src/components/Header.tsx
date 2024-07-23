@@ -27,7 +27,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
 
   const socialIcons = useRef([
     { src: "/telegram.png", link: "https://t.me/realmarv_sol" },
-    { src: "/twitter.png", link: "https://x.com/Realmarv_Sol" },
+    { src: "/twitter.png", link: "https://x.com/realmarvonsol" },
     { src: "/dex.png", link: "https://dexscreener.com/solana/AxrSAP7p2tP8gHTYUUzHncN2vBFuFGSPJjvvzB7919F2" },
     { src: "/dextools.png", link: "https://www.dextools.io/app/en/solana/pair-explorer/AxrSAP7p2tP8gHTYUUzHncN2vBFuFGSPJjvvzB7919F2?t=1721480118895" }
   ]).current;

@@ -10,7 +10,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
   const social=useRef([
     {title:"TikTok",url:""},
     {title:"Memes",url:""},
-    {title:"Twitter",url:"https://x.com/Realmarv_Sol"},
+    {title:"Twitter",url:"https://x.com/realmarvonsol"},
     {title:"Telegram",url:"https://t.me/realmarv_sol"},
     {title:"Instagram",url:""}
   ]).current
@@ -66,7 +66,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
               <div className={[styles.marvtext, className].join(" ")}>MARV</div>
               <div className={[styles.jointext, className].join(" ")}>Join Marv at Marv Army</div>
               <div style={{ display: "flex", flexDirection: "row", gap: "5%" }}>
-              <a href="https://x.com/Realmarv_Sol" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/realmarvonsol" target="_blank" rel="noopener noreferrer">
                 <img
                   className={[styles.socialicons, className].join(" ")}
                   loading="lazy"
